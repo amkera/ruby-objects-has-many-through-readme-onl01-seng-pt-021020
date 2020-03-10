@@ -28,6 +28,9 @@ class Customer
     #iterating through every instance of Meal and returning only the ones whose meal's customer matches the current customer instance. 
   end 
   
+  def waiters
+    meals.map do |meal|
+  
   
   
   
