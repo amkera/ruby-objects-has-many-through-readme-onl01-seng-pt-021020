@@ -7,7 +7,7 @@ class Customer
   def initialize(name, age)
     @name = name
     @age = age 
-    @@all << self 
+    @@all << self #self is a customer being added to @@all array
     binding.pry
   end 
   
