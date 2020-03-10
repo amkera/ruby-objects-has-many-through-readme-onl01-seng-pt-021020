@@ -14,6 +14,9 @@ class Waiter
   
   def new_meal(customer, total, tip = 0)
     Meal.new(self, customer, total, tip)
+    #Parameters are different for the new_meal method between customer and waiter, but order of argeuments for Meal.new remains the same. 
+  end 
+  
   
   
 end
