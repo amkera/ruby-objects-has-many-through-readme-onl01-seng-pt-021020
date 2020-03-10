@@ -30,6 +30,15 @@ class Customer
   
   def waiters
     meals.map do |meal|
+      meal.waiter 
+    end 
+    #we now want a list of all the waiters that our customer has interacted with. 
+    #each meal is associated with a waiter, so to get every waiter
+    #we take the array of all customer's meals 
+    #map over it to get a NEW array, getting the waiter from each of those meals 
+    
+  end 
+  
   
   
   
