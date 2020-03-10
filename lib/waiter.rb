@@ -22,7 +22,14 @@ class Waiter
       meal.waiter == self 
     end 
   end 
-  #This is the reverse of the 
+  #This is the other direction...this is how a waiter can find a customer 
+  
+  def best_tipper
+    best_tipped_meal = meals.max do |meal_a, meal_b|
+      meal_a.tip <=> meal_b.tip
+    end 
+    best_tipped_meal.customer
+  end 
   
   
   
