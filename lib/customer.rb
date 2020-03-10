@@ -15,7 +15,7 @@ class Customer
   end 
   
   def new_meal(waiter, total, tip = 0)
-    Meal.new(self, customer, total, tip)
+    Meal.new(waiter, self, total, tip)
     #customer not taken in as an argument because self is customer. 
     #This method allows us to create new meals as a customer
     #Assosciate each new meal with the customer that created it. 
