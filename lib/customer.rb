@@ -8,7 +8,10 @@ class Customer
     @name = name
     @age = age 
     @@all << self #self is a customer being added to @@all array
-    binding.pry
+  end 
+  
+  def self.all
+    @@all
   end 
   
   
