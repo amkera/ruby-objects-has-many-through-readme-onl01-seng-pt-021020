@@ -21,6 +21,13 @@ class Customer
     #Assosciate each new meal with the customer that created it. 
   end 
   
+  def meals
+    Meal.all.select do |meal|
+      meal.customer == self 
+    end 
+    #iterating through every instance of Meal and returning only the ones whose meal's customer matches the current customer instance. 
+  end 
+  
   
   
   
