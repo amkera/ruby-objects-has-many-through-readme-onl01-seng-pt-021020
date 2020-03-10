@@ -17,6 +17,13 @@ class Waiter
     #Parameters are different for the new_meal method between customer and waiter, but order of argeuments for Meal.new remains the same. 
   end 
   
+  def meals 
+    Meal.all.select do |meal|
+      meal.waiter == self 
+    end 
+  end 
+  #This is the reverse of the 
+  
   
   
 end
